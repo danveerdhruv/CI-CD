@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Lightning Card Button">
+        <lightning-button variant="brand" label={onClickButton} onclick={handleClick}>
+            
+        </lightning-button>
+        <!--Below is the if else statement used to show the lightning card if cardVisible variable holds true and hide the details if false-->
+        <template if:true={cardVisible}>
+            <lightning-card title="Show button is working">
+                {myTitle}
+            </lightning-card>
+        </template>
+    </lightning-card>    
+</template>
