@@ -5,5 +5,6 @@ export default class ChildComponent extends LightningElement {
 
     @api changeValue(){
         this.itemTitle="Value is changed from Child to Parent";
+        console.log('');
     }
 }
